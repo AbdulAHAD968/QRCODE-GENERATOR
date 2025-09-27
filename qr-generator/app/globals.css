@@ -1,0 +1,80 @@
+@import "tailwindcss";
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Custom scrollbar for dark mode */
+.dark ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* globals.css */
+
+/* Default (light theme) */
+* {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #f9fafb; /* blue thumb on gray-50 track */
+}
+
+/* Dark theme */
+.dark * {
+  scrollbar-color: #3b82f6 #111827; /* blue thumb on gray-900 track */
+}
+
+/* For WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9fafb; /* light gray */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3b82f6; /* theme blue */
+  border-radius: 8px;
+}
+
+/* Dark theme overrides */
+.dark ::-webkit-scrollbar-track {
+  background: #111827; /* dark gray */
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #3b82f6; /* same blue thumb */
+}
