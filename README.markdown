@@ -2,6 +2,10 @@
 
 A modern, responsive QR code generator built with Next.js, TypeScript, and Tailwind CSS. This application allows users to create customizable QR codes, download them in various formats, and manage their generation history. Deployed on Vercel, it provides a seamless user experience with Progressive Web App (PWA) support.
 
+![Landing Page](/github-readme-assets/home.png)
+
+---
+
 ## Table of Contents
 - [Features](#features)
 - [Demo](#demo)
@@ -13,6 +17,8 @@ A modern, responsive QR code generator built with Next.js, TypeScript, and Tailw
 - [Contact](#contact)
 - [License](#license)
 
+---
+
 ## Features
 - Generate QR codes from URLs, text, or other data.
 - Customize QR code appearance (e.g., colors, patterns, and sizes).
@@ -23,8 +29,14 @@ A modern, responsive QR code generator built with Next.js, TypeScript, and Tailw
 - Type-safe codebase with TypeScript.
 - Built with Next.js for fast server-side rendering and static site generation.
 
+---
+
 ## Demo
 Try the live application at [https://drqr.vercel.app](https://drqr.vercel.app).
+
+![Landing Page](/github-readme-assets/features.png)
+
+---
 
 ## Installation
 To run the project locally, follow these steps:
@@ -49,12 +61,19 @@ To run the project locally, follow these steps:
    ```
    Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
+---
+
 ## Usage
 1. Navigate to the generator page (`/generator`) to input content for your QR code (e.g., a URL or text).
 2. Customize the QR code using the styling controls (e.g., change colors or patterns).
 3. Preview the QR code in real-time.
 4. Download the QR code in your preferred format using the download controls.
 5. View your generation history in the history panel to reuse or modify past QR codes.
+
+
+![Landing Page](/github-readme-assets/generate.png)
+
+---
 
 ## Testing
 The application has been thoroughly tested using unit, integration, and system tests to ensure reliability and performance. Below is a summary of the test results:
@@ -66,6 +85,8 @@ The application has been thoroughly tested using unit, integration, and system t
 | System Tests    | 10        | 10     | 0      | 85%          |
 
 Tests are written using modern testing frameworks and executed as part of the CI/CD pipeline to maintain code quality.
+
+---
 
 ## Project Structure
 The project follows a modular structure for maintainability and scalability:
@@ -100,6 +121,8 @@ qr-generator/
 └── README.md               # Project documentation
 ```
 
+---
+
 ## Contributing
 Contributions are welcome! To contribute:
 1. Fork the repository.
@@ -110,8 +133,12 @@ Contributions are welcome! To contribute:
 
 Please ensure your code follows the project's coding standards and includes relevant tests.
 
+---
+
 ## Contact
 For questions, feedback, or support, please contact [ahad06074@gmail.com](mailto:ahad06074@gmail.com).
+
+---
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
